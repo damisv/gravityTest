@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.assist.tutorial.damian.gravitytest.MainActivity">
+
+    <TextView
+        android:id="@+id/z_Axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z-AXIS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintVertical_bias="0.032" />
+    <TextView
+        android:id="@+id/y_Axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y_Axis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.102" />
+    <TextView
+        android:id="@+id/x_Axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X_Axis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.102" />
+    <TextView
+        android:id="@+id/z_ACC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z-ACC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.831" />
+    <TextView
+        android:id="@+id/y_ACC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y_ACC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.83" />
+    <TextView
+        android:id="@+id/x_ACC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X_ACC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <TextView
+        android:id="@+id/azimuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="209dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.087" />
+
+    <TextView
+        android:id="@+id/pitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/azimuth"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.087" />
+
+    <TextView
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/pitch"
+        app:layout_constraintVertical_bias="0.051"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.087" />
+
+    <TextView
+        android:id="@+id/worldAcc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/azimuth"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/worldAcc2"
+        app:layout_constraintHorizontal_bias="0.963"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/worldAcc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/pitch"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.963"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/worldAcc3" />
+
+    <TextView
+        android:id="@+id/worldAcc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/roll"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="137dp" />
+
+    <TextView
+        android:id="@+id/projection1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/roll"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/projection2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/projection3" />
+
+    <TextView
+        android:id="@+id/projection3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintHorizontal_bias="0.025" />
+
+</android.support.constraint.ConstraintLayout>
